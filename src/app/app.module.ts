@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component';
-import { routes } from './app.routes'; // Configuración de rutas
+import { routes } from './app.routes'; // Importa tus rutas aquí
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { routes } from './app.routes'; // Configuración de rutas
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes) // Desactiva los hashes
+    RouterModule.forRoot(routes) // Aquí importamos RouterModule con tus rutas
   ],
   providers: [],
   bootstrap: [AppComponent]

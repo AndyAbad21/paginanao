@@ -1,0 +1,32 @@
+.princial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+.princial h1{
+    font-size: 40px;
+}
+.reseñas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .reseñas span{
+    font-size: 25px;
+  }
+  
+  .reseñas p{
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra al texto */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al cuadro del párrafo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Espaciado externo */
+    background-color: #f5f5f5; /* Fondo claro para destacar la sombra */
+    border-radius: 5px; /* Bordes redondeados */
+  }
