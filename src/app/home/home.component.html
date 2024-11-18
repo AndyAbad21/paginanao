@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Bootstrap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="">
+                <img src="assets/logo.png" alt="Logo de Poemas">
+                Libro poemas
+            </a>
+        </div>
+        <div>
+            <ul>
+                <li><a [routerLink]="['/home']"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a [routerLink]="['/auth']"><i class="fas fa-user"></i> Autores</a></li>
+                <li><a [routerLink]="['/reviews']"><i class="fas fa-book"></i> Reseñas</a></li>
+                <li><a [routerLink]="['/contact']"><i class="fas fa-envelope"></i> Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="cajita2">
+        <h1>El delirio del dolor un viaje poetico</h1>
+        <div class="cajita2__img">
+            <img src="assets/libro4.jpeg" alt="">
+        </div>
+        <h3>Sinopsis</h3>
+        <div class="sinopsis">
+            <p>Este libro de poemas es una recopilacion
+                de emociones vividas y sinceras sobre el amor,
+                el despecho y las luchas internas
+                que todos experimentamos. A través de
+                versos delicados exploro el vaivén entre el deseo,
+                el dolor y la redención
+            </p>
+        </div>
+        <div class="cajita2__descargar">
+            <span>Para descargar el libro da click en el siguiente boton</span>
+            <button (click)="goToAutores()"><a href="">Descargar</a></button>
+
+        </div>
+        <div class="reseñas" id="res">
+            <span>Reseñas</span>
+            <p>
+                El libro mas feo porque me hizo revivir emociones de mi pasado,
+                por cierto la mas bella autora
+            </p>
+        </div>
+    </div>
+
+    <div class="cajita3">
+        <footer id="contacto">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+            <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

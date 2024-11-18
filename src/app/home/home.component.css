@@ -1,0 +1,363 @@
+* {
+  font-family: 'Sour Gummy', cursive;
+}
+
+
+/* Estilo general del navbar */
+nav {
+  display: flex;
+  /* Coloca los elementos en línea horizontal */
+  justify-content: space-between;
+  /* Espaciado entre logo y menú */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  background-color: #000;
+  /* Fondo oscuro */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  position: sticky;
+  /* Fija el navbar en la parte superior */
+  top: 0;
+  /* Posición fija desde arriba */
+  z-index: 1000;
+  /* Asegura que esté encima de otros elementos */
+}
+
+/* Logo e imagen */
+nav div:first-child a {
+  display: flex;
+  /* Permite que el texto y la imagen estén juntos */
+  align-items: center;
+  /* Centra verticalmente */
+  color: white;
+  /* Color del texto */
+  text-decoration: none;
+  /* Sin subrayado */
+  font-size: 20px;
+  /* Tamaño del texto */
+  font-weight: bold;
+  /* Negrita */
+}
+
+nav div:first-child img {
+  height: 40px;
+  /* Altura de la imagen */
+  margin-right: 10px;
+  /* Espacio entre imagen y texto */
+}
+
+/* Lista de enlaces */
+nav ul {
+  display: flex;
+  /* Coloca los enlaces en línea horizontal */
+  list-style: none;
+  /* Sin viñetas */
+  margin: 0;
+  /* Sin margen */
+  padding: 0;
+  /* Sin padding */
+  gap: 20px;
+  /* Espaciado entre elementos */
+}
+
+nav ul li a {
+  color: white;
+  /* Color del texto */
+  text-decoration: none;
+  /* Sin subrayado */
+  font-size: 18px;
+  /* Tamaño de fuente */
+  font-weight: 500;
+  /* Peso medio */
+  padding: 8px 15px;
+  /* Espaciado interno */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Animación */
+}
+
+/* Hover en los enlaces */
+nav ul li a:hover {
+  background-color: #555;
+  /* Fondo al pasar el cursor */
+  color: #00bcd4;
+  /* Cambia el color del texto */
+}
+
+/* Enlace normal */
+nav ul li a {
+  text-decoration: none;
+  /* Quitar subrayado */
+  padding: 8px;
+  /* Espaciado interno */
+  display: flex;
+  /* Permite alinear íconos y texto juntos */
+  align-items: center;
+  /* Centrar íconos y texto verticalmente */
+  transition: transform 0.3s ease;
+  /* Animación suave */
+}
+
+nav ul li a i {
+  margin-right: 10px;
+}
+
+/* Hover: Aumenta tamaño */
+nav ul li a:hover {
+  transform: scale(1.2);
+  /* Aumenta el tamaño al 120% */
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.cajita2__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.cajita2 .sinopsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajita2 .sinopsis p {
+  text-align: center;
+  /* Centra el texto dentro del párrafo */
+  max-width: 600px;
+  /* Limita el ancho del texto para mejorar legibilidad */
+}
+
+.cajita2__descargar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cajita2__descargar span {
+  color: #03df15;
+}
+
+.cajita2 p {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+
+
+button {
+  border-radius: 20px;
+  margin: 20px;
+  background: #03df15;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+button:hover {
+  background: #fff;
+  color: #1AAB8A;
+}
+
+button:before,
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1AAB8A;
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.cajita2__descargar button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.reseñas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reseñas span{
+  font-size: 25px;
+}
+
+.reseñas p{
+  font-size: 20px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra al texto */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al cuadro del párrafo */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Espaciado externo */
+  background-color: #f5f5f5; /* Fondo claro para destacar la sombra */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo general para el footer */
+footer {
+  background-color: #000;
+  /* Fondo oscuro */
+  color: white;
+  /* Texto blanco */
+  padding: 10px;
+  /* Reducido para menor separación */
+  text-align: center;
+  /* Centrar texto y elementos */
+  font-size: 14px;
+  /* Tamaño del texto */
+  margin-top: 20px;
+  /* Separación desde el contenido anterior */
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+  /* Sombra para destacar el footer */
+}
+
+/* Contenedor general de elementos */
+footer div {
+  display: flex;
+  /* Coloca elementos en línea */
+  justify-content: center;
+  /* Alinea todo al centro */
+  align-items: center;
+  /* Centra verticalmente */
+  flex-wrap: wrap;
+  /* Permite que los elementos bajen en pantallas pequeñas */
+  gap: 10px;
+  /* Espacio uniforme entre elementos */
+}
+
+/* Redes sociales */
+footer div:first-child {
+  display: flex;
+  /* Coloca los íconos en una fila */
+  gap: 10px;
+  /* Espacio entre íconos */
+}
+
+footer div:first-child a {
+  text-decoration: none;
+  /* Sin subrayado */
+  color: white;
+  /* Color del ícono */
+  font-size: 20px;
+  /* Tamaño del ícono */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Animación al pasar el cursor */
+}
+
+/* Hover para íconos */
+footer div:first-child a:hover {
+  transform: scale(1.2);
+  /* Aumenta el tamaño del ícono */
+  color: #00bcd4;
+  /* Cambia el color al pasar el cursor */
+}
+
+/* Enlaces de texto */
+footer div:nth-child(2) a {
+  margin: 0 5px;
+  /* Espacio reducido entre enlaces */
+  text-decoration: none;
+  /* Sin subrayado */
+  color: white;
+  /* Texto blanco */
+  font-size: 14px;
+  /* Tamaño del texto */
+  transition: color 0.3s ease;
+  /* Animación al pasar el cursor */
+}
+
+/* Hover para enlaces */
+footer div:nth-child(2) a:hover {
+  color: #00bcd4;
+  /* Cambia el color al pasar el cursor */
+}
+
+/* Texto de derechos reservados */
+footer p {
+  font-size: 12px;
+  /* Texto más pequeño */
+  margin: 5px 0;
+  /* Menor espacio superior e inferior */
+  color: #ccc;
+  /* Color gris claro */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    /* Coloca los elementos en una columna */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* Coloca los enlaces en vertical */
+    gap: 10px;
+    /* Espaciado entre enlaces */
+  }
+}
